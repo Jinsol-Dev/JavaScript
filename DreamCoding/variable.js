@@ -112,4 +112,16 @@ text = "7" + 5; // 문자열 + 숫자
 console.log(`value: ${text}, type: ${typeof text}`); // string
 text = "8" / "2"; // 문자열끼리의 나누기 -> 문자열 안의 값은 숫자여서 언어가 숫자들끼의 나누기 실행
 console.log(`value: ${text}, type: ${typeof text}`); // number
-console.log(text.charAt(0)); // 중간에 바뀐 타입 모르고 출력하면 error 발생 -> JS는 런타임에서 타입이 정해지기 때문! -> TS 등장하게 된 이유
+// console.log(text.charAt(0)); // 중간에 바뀐 타입 모르고 출력하면 error 발생 -> JS는 런타임에서 타입이 정해지기 때문! -> TS 등장하게 된 이유
+
+// 변수
+// 변수를 선언함과 동시에 값을 대입하는 행위를 초기화(initialization)라고 한다.
+// 변수 선언은 항상 결괏값이 undefined로 출력된다.
+// 변수를 선언할 때 값을 대입하지 않으면 기본으로 값이 undefined가 된다.
+
+// 변수는 중복을 줄일 때도 사용한다.
+// 나중에 코드를 수정할 때는 string1 변수의 값만 수정하면 변수를 사용하는 부분이 한번에 수정된다.
+let string1 = `엄청 긴 문자열 입니다.`;
+console.log(string1);
+console.log(string1);
+console.log(string1);
